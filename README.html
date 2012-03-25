@@ -1,0 +1,74 @@
+<h1 id="cinnamonroll">cinnamonroll</h1>
+<h2 id="whats-this">What's this ?</h2>
+<p>This is <strong>the tool for the CSS</strong> that <strong>decompiling/compiling</strong> to the <strong>&quot;.cinnamonroll&quot;</strong>/&quot;.css&quot; type, wrinte in the <em>haskell</em> use with the <em>Parsec library</em>.</p>
+<p>Notes:</p>
+<ul>
+<li>The cinnamonroll is the tool for writing/managing CSS to <strong>easy</strong> for a human <strong>like me</strong>. :)</li>
+<li>It's not a validator.
+<ul>
+<li>very loose allowance for a CSS syntax.</li>
+<li>parsing follow the &quot;cinnamonroll rule&quot;.
+<ul>
+<li>the top level of a CSS has cinnamonroll blocks.</li>
+<li>the second level of a CSS has selector blocks.</li>
+<li>the third level of a CSS has property blocks.</li>
+<li>the charactor of '@' called &quot;cinnamonroll&quot;. :)</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="how-to-run-it">How to Run it</h3>
+<p>In the directory: src/cinnamonroll.lhs</p>
+<p>It's the command line tool writen in literate haskell.</p>
+<h4 id="usage-for-an-instant">Usage for an instant</h4>
+<p>Decompile to .cinnamonroll from .css</p>
+<pre><code>% ./cinnamonroll.lhs -d source.css</code></pre>
+<p>Compile to .css from .cinnamonroll</p>
+<pre><code>% ./cinnamonroll.lhs -c source.cinnamonroll</code></pre>
+<h4 id="build-and-install">Build and Install</h4>
+<pre><code>% ghc cinnamonroll.lhs
+% ln -s `pwd`/cinnamonroll /usr/local/bin/cinnamonroll</code></pre>
+<p>Note: you can install to the other path as you like.</p>
+<h4 id="requirement">Requirement</h4>
+<ul>
+<li><a href="http://www.haskell.org/ghc/">GHC</a> (&gt;=7.4.1)</li>
+</ul>
+<h3 id="use-the-backend-library">Use the backend library</h3>
+<p>In the directory: src/WRP/CSS.hs</p>
+<p>This is the library of the &quot;WRP.CSS&quot;. The command line tool require it. This is the entity of the software. You can use it if you need for a your haskell programs.</p>
+<h2 id="specification">Specification</h2>
+<h3 id="digest">Digest</h3>
+<ul>
+<li>available implements
+<ul>
+<li>write with space indent match to a level of nest</li>
+<li>omit comment blocks</li>
+</ul></li>
+<li>planed feature
+<ul>
+<li>optimization options</li>
+</ul></li>
+<li>no plan
+<ul>
+<li>no-omit comment blocks option</li>
+</ul></li>
+</ul>
+<h3 id="cinnamonroll-1">.cinnamonroll</h3>
+<p>(Now Preparing)</p>
+<h2 id="licence">Licence</h2>
+<h3 id="for-software">for Software</h3>
+<p><a href="http://www.opensource.org/licenses/mit-license">MIT/X11</a></p>
+<h3 id="for-document">for Document</h3>
+<p><a href="http://creativecommons.org/licenses/by/2.1/jp/deed.en">CC-BY/2.1(ja)</a></p>
+<h2 id="contact">Contact</h2>
+<ul>
+<li><p>GitHub : <a href="">GitHub</a></p></li>
+<li>Website : <a href="http://www.WonderRabbitProject.net">Wonder Rabbit Project</a></li>
+<li>E-Mail : <script type="text/javascript">
+<!--
+h='&#x77;&#x6f;&#110;&#100;&#x65;&#114;&#114;&#x61;&#98;&#98;&#x69;&#116;&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#46;&#110;&#x65;&#116;';a='&#64;';n='&#x75;&#x73;&#x61;&#x67;&#x69;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'usagi@WonderRabbitProject.net'+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x75;&#x73;&#x61;&#x67;&#x69;&#64;&#x57;&#x6f;&#110;&#100;&#x65;&#114;&#82;&#x61;&#98;&#98;&#x69;&#116;&#80;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#46;&#110;&#x65;&#116;&#32;&#40;&#x75;&#x73;&#x61;&#x67;&#x69;&#32;&#x61;&#116;&#32;&#x77;&#x6f;&#110;&#100;&#x65;&#114;&#114;&#x61;&#98;&#98;&#x69;&#116;&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#32;&#100;&#x6f;&#116;&#32;&#110;&#x65;&#116;&#x29;</noscript></li>
+<li>Facebook: <a href="https://www.facebook.com/usagi.wrp">usagi.wrp</a></li>
+<li><p>Twitter : <a href="https://twitter.com/#!/USAGI_WRP">@USAGI_WRP</a></p></li>
+</ul>

@@ -1,0 +1,35 @@
+  /* aabbcc */  @charset "UTF-8";  /*  */  @aaa va;/*a*/@bbb vb;
+
+@import0 url(aaa);/**/@import1 url(aaa);
+@import url(bbb);/* comment*/
+@import url(ccc);
+
+/* comment*/
+
+* {/* comment*/ color: hsla(0,0%,0%,0) /* comment*/}
+
+#id {
+  color: #000;
+  margin :auto;
+  padding : 0
+}
+
+.class{ color:#123; margin:0;padding-left:0 }
+
+a{color:rgb(0,20,40)}a:hover{color:#AABBCC}
+
+body{color:#222}
+
+@media screen, tty{
+  .hoge { color: Yellow; }
+  .fuga { color: Blue; }
+}
+
+@media print{
+  .hoge { color: AliceBlue; }
+  .fuga { color: Gray; }
+}
+
+@page {
+  size: 10cm;
+}
