@@ -34,6 +34,19 @@ Compile to .css from .cinnamonroll
 
 #### Build and Install
 
+##### Cabal
+
+    % cabal clean
+    % cabal configure
+    % cabal build
+    % cabal sdist
+    % cd dist
+    % cabal install cinnamonroll-A.B.C.tar.gz
+    
+Note: A.B.C is the version number in "cinnamonroll-A.B.C.tar.gz" packaged file.
+
+##### Manually
+
     % ghc cinnamonroll.lhs
     % ln -s `pwd`/cinnamonroll /usr/local/bin/cinnamonroll
 

@@ -25,6 +25,15 @@
 <p>Compile to .css from .cinnamonroll</p>
 <pre><code>% ./cinnamonroll.lhs -c source.cinnamonroll</code></pre>
 <h4 id="build-and-install">Build and Install</h4>
+<h5 id="cabal">Cabal</h5>
+<pre><code>% cabal clean
+% cabal configure
+% cabal build
+% cabal sdist
+% cd dist
+% cabal install cinnamonroll-A.B.C.tar.gz</code></pre>
+<p>Note: A.B.C is the version number in &quot;cinnamonroll-A.B.C.tar.gz&quot; packaged file.</p>
+<h5 id="manually">Manually</h5>
 <pre><code>% ghc cinnamonroll.lhs
 % ln -s `pwd`/cinnamonroll /usr/local/bin/cinnamonroll</code></pre>
 <p>Note: you can install to the other path as you like.</p>
