@@ -41,8 +41,9 @@ get_options :: IO ([Options], [String])
 get_options = do
   a <- getArgs
   case getOpt Permute options a of
-    (o, n , []  )  -> return (o, n)
-    (_, _ , errs)  -> ioError ( userError ( concat errs ++ usage ) )
+    ([], _ , []  )  -> return ([Help] , [])
+    (o , n , []  )  -> return (o, n)
+    (_ , _ , errs)  -> ioError ( userError ( concat errs ++ usage ) )
 
 usage :: String
 usage = usageInfo header options
