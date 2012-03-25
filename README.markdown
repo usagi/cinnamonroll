@@ -90,7 +90,7 @@ This is the library of the "WRP.CSS". The command line tool require it. This is 
 *   Facebook: [usagi.wrp][C:facebook]
 *   Twitter : [@USAGI\_WRP][C:twitter]
 
-[C:github]:   
+[C:github]:   https://github.com/usagi/cinnamonroll
 
 [C:website]:  http://www.WonderRabbitProject.net
 [C:email]:    mailto:usagi@WonderRabbitProject.net
