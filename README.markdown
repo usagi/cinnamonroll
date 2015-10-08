@@ -14,7 +14,7 @@ Notes:
         * the top level of a CSS has cinnamonroll blocks.
         * the second level of a CSS has selector blocks.
         * the third level of a CSS has property blocks.
-        * the charactor of '@' called "cinnamonroll". :)
+        * the character of '@' called "cinnamonroll". :)
 
 ### How to Run it
 
